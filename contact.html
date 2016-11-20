@@ -21,7 +21,7 @@
       crossorigin="anonymous"></script>
 
   <title>Contact</title>
-  
+
 </head>
 
 <body>
@@ -47,6 +47,48 @@ works, that I originally pulled from Bootstrap documentation -->
   </div>
 </nav>
 
+<!-- Jumbotron to make the header stand out -->
+<div class="jumbotron">
+  <div class="container">
+    <h1>Contact</h1>
+  </div>
+</div>
+
+<!-- Contact form html pulled from the Mozilla Developers website to save time -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6">
+      <h1>Social Media and Contact Info</h1>
+      <p>Contact Number: ++440000000000</p>
+      <p>HQ: Oxford, United Kingdon</p>
+      <p>Email: hello@example.com</p>
+      <a href="https://www.facebook.com"><img src="Images/facebook"></a>
+      <a href="https://www.twitter.com"><img src="Images/twitter"></a>
+    </div>
+
+    <div class="col-lg-6">
+      <h1>Contact Form</h1>
+      <form action="/my-handling-form-page" method="post">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="user_name" />
+        </div>
+        <div>
+            <label for="mail">E-mail:</label>
+            <input type="email" id="mail" name="user_mail" />
+        </div>
+        <div>
+            <label for="msg">Message:</label>
+            <textarea id="msg" name="user_message"></textarea>
+        </div>
+
+        <div class="button">
+            <button type="submit">Send your message</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
 
 
 <body>
