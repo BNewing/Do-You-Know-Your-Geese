@@ -9,7 +9,9 @@ You'll be shown an image of a goose, and asked to pick from a list of options of
 ## What is the Website?
 The website is currently a basic Home page, About page and Contact page. 
 
-What's used in the Website?
+The actual quiz will be coming soon!
+
+## What's used in the Website?
 + HTML
 + CSS
 + Bootstrap
