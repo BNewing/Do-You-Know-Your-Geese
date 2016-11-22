@@ -1,9 +1,5 @@
 /* Overall Page CSS */
 
-body {
-
-}
-
 .jumbotron {
   background-color: #FFA500;
 }
@@ -24,9 +20,6 @@ ul.footer {
 div.home {
   text-align: center;
 }
-
-/* About Page CSS */
-
 
 
 /* Contact Page CSS */
@@ -50,7 +43,7 @@ nav {
 
 }
 
-/* found this on codepen after a Google search and then used own code to tweak
+/* Footer - found this on codepen after a Google search and then used own code to tweak
 to get to fully sit at the bottom */
 html {
   position: relative;
@@ -75,7 +68,9 @@ body {
 ul.footer {
   list-style-type: none;
 }
-/* Copied this media query across from my own personal website */
+
+
+/* RESPONSIVE STUFF - Copied this media query across from my own personal website */
 @media (max-width: 650px){
   .carousel-inner {
     max-height: 200px;
