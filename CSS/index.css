@@ -1,3 +1,9 @@
+/* Overall Page CSS */
+
+html {
+  font-family: Georgia;
+}
+
 /* home page CSS */
 .home-jumbotron {
   margin-bottom: 0px;
@@ -29,6 +35,13 @@ textarea {
 input {
   width: 400px;
 }
+
+/* Nav Bar CSS */
+nav {
+  font-size: 25px;
+
+}
+
 /* found this on codepen after a Google search and then used own code to tweak
 to get to fully sit at the bottom */
 html {
