@@ -19,7 +19,7 @@
       integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
       crossorigin="anonymous"></script>
 
-      <link style="text/css" rel="stylsheet" href="CSS/index.css">
+      <link style="text/css" rel="stylesheet" href="CSS/index.css">
 
   <title>Contact</title>
 
@@ -58,28 +58,28 @@ works, that I originally pulled from Bootstrap documentation -->
 <!-- Contact form html pulled from the Mozilla Developers website to save time -->
 <div class="container">
   <div class="row">
-    <div class="col-lg-6">
+    <div class="col-md-6 col-xs-12">
       <h1>Social Media and Contact Info</h1>
       <p>Contact Number: ++440000000000</p>
       <p>HQ: Oxford, United Kingdom</p>
       <p>Email: hello@example.com</p>
-      <a href="https://www.facebook.com"><img src="Images/facebook.svg"></a>
-      <a href="https://www.twitter.com"><img src="Images/twitter.svg"></a>
+      <a href="https://www.facebook.com"><img src="Images/facebook.svg" class="social-media"></a>
+      <a href="https://www.twitter.com"><img src="Images/twitter.svg" class="social-media"></a>
     </div>
 
-    <div class="col-lg-6">
+    <div class="col-md-6 col-xs-12">
       <h1>Contact Form</h1>
       <form action="/my-handling-form-page" method="post">
         <div>
-            <label for="name">Name:</label>
+            <label for="name">Name:</label><br>
             <input type="text" id="name" name="user_name" />
         </div>
         <div>
-            <label for="mail">E-mail:</label>
+            <label for="mail">E-mail:</label><br>
             <input type="email" id="mail" name="user_mail" />
         </div>
         <div>
-            <label for="msg">Message:</label>
+            <label for="msg">Message:</label><br>
             <textarea id="msg" name="user_message"></textarea>
         </div>
 
