@@ -43,6 +43,7 @@
     firebase.initializeApp(config);
   </script>
 
+  <script src="contact.js"></script>
 
 </head>
 
@@ -90,22 +91,22 @@ works, that I originally pulled from Bootstrap documentation -->
 
     <div class="col-md-6 col-xs-12">
       <h1>Contact Form</h1>
-      <form action="/my-handling-form-page" method="post">
+      <form method="post">
         <div>
             <label for="name">Name:</label><br>
             <input type="text" id="name" name="user_name" />
         </div>
         <div>
-            <label for="mail">E-mail:</label><br>
-            <input type="email" id="mail" name="user_mail" />
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="user_email" />
         </div>
         <div>
-            <label for="msg">Message:</label><br>
-            <textarea id="msg" name="user_message"></textarea>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="user_message"></textarea>
         </div>
 
         <div class="button">
-            <button type="submit">Send your message</button>
+            <button type="submit" onClick="writeUserData()">Send your message</button>
         </div>
       </form>
     </div>
