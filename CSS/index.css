@@ -1,14 +1,22 @@
 /* Overall Page CSS */
 
-html {
-  font-family: Georgia;
+body {
+  background-color: #A6C48A;
+}
+
+.jumbotron {
+  background-color: #678D58;
+}
+
+a {
+  color: #F4F0BB;
+}
+
+ul.footer {
+  background-color: #69747C;
 }
 
 /* home page CSS */
-.home-jumbotron {
-  margin-bottom: 0px;
-}
-
 .carousel-inner {
   max-height: 450px;
 }
