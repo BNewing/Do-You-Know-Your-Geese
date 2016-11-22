@@ -2,14 +2,13 @@
 <html lang="en">
 
 <head>
-  <link style="text/css" rel="stylsheet" href="CSS/index.css">
   <!--Added in the CDN for bootstrap because Chris talked about how you prefer
   your sites to be lightweight. Whilst using CDN does mean it won't work if there is
   no internet connection, it does mean less to download if they've already
   got it stored in their cache from another website -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-  <!-- addition of jQuery to get Bootstrap to work -->
+<!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+-->
+  <!-- addition of jQuery to get Bootstrap to work
   <script
     src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
     integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
@@ -18,9 +17,14 @@
     <script
       src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
       integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous"></script> -->
+
+
+      <link style="text/css" rel="stylesheet" href="./index.css">
 
     <title>About</title>
+</head>
+
 <body>
 
 <!-- Using Navbar CSS from my personal website - re-using own code that I know
@@ -80,7 +84,7 @@ Jumbotron to make the title stand out, but with container nested in to get the m
   <h1> Who Created it? </h1>
   <div class="row">
     <div class="col-lg-6 col-sm-12">
-      <img src="Images/bev.jpg">
+      <img class="img-circle bev" src="Images/bev.jpg">
     </div>
     <div class="col-lg-6 col-sm-12">
       <p>Bev created this because she loves geese and she's also a bit mad.</p>

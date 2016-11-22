@@ -2,13 +2,11 @@
 <html lang="en">
 
 <head>
-  <link style="text/css" rel="stylsheet" href="CSS/index.css">
   <!--Added in the CDN for bootstrap because Chris talked about how you prefer
   your sites to be lightweight. Whilst using CDN does mean it won't work if there is
   no internet connection, it does mean less to download if they've already
   got it stored in their cache from another website -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <!-- addition of jQuery to get Bootstrap to work -->
   <script
     src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
@@ -19,6 +17,10 @@
       src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
       integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
       crossorigin="anonymous"></script>
+
+<!--I had trouble getting my own css to load and after stripping it back on the About page and commenting out the bootstrap,
+I realised that I'd just mispelled 'stylesheet' - d'oh... -->
+    <link style="text/css" rel="stylesheet" href="CSS/index.css">
 
   <title>Home</title>
 </head>
@@ -46,13 +48,6 @@ works, that I originally pulled from Bootstrap documentation -->
   </div>
 </nav>
 
-<!-- Jumbotron to make the header stand out -->
-<div class="jumbotron">
-  <div class="container">
-    <h1>Do You Know Your Geese? The App</h1>
-  </div>
-</div>
-
   <!-- I've added in a bootstrap carousel with code pulled from W3Schools. I was helping
   out with students writing these the other day. They won't be rendered in IE9
   and below but they make the page look a bit more dynamic and interesting and
@@ -71,19 +66,19 @@ works, that I originally pulled from Bootstrap documentation -->
 
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="Images/goose1.jpeg" alt="Chania">
+      <img src="Images/goose1.jpeg" alt="Chania" class="carousel">
     </div>
 
     <div class="item">
-      <img src="Images/goose2.jpg" alt="Chania">
+      <img src="Images/goose2.jpg" class="carousel" alt="Chania">
     </div>
 
     <div class="item">
-      <img src="Images/goose3.jpg" alt="Flower">
+      <img src="Images/goose3.jpg" class="carousel" alt="Flower">
     </div>
 
     <div class="item">
-      <img src="Images/goose4.jpg" alt="Flower">
+      <img src="Images/goose4.jpg" class="carousel" alt="Flower">
     </div>
   </div>
 
@@ -97,7 +92,7 @@ works, that I originally pulled from Bootstrap documentation -->
   </a>
 </div>
 
-<div class="container">
+<div class="container home">
   <h1> Do You Know Your Geese?</h1>
   <p>Ever wanted to practice your knowledge of types of geese? Well, you've come
     to the right place... </p>

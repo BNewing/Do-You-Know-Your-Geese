@@ -1,0 +1,24 @@
+.home-jumbotron {
+  margin-bottom: 0px;
+}
+
+.carousel-inner {
+  max-height: 450px;
+}
+
+div.home {
+  text-align: center;
+}
+
+h1 {
+  color: pink;
+}
+
+img.bev {
+  height: 100px;
+  width: 100px;
+}
+
+body {
+  color: pink;
+}
