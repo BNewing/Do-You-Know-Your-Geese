@@ -27,10 +27,6 @@ img.bev {
   width: 200px;
 }
 
-body {
-  color: pink;
-}
-
 img.social-media {
   height: 40px;
   width: 40px;
@@ -38,6 +34,15 @@ img.social-media {
 }
 
 /* found this on codepen after a Google search*/
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 10rem;
+}
+
 .footer {
   position: absolute;
   right: 0;
@@ -46,8 +51,14 @@ img.social-media {
   padding: 1rem;
   background-color: #efefef;
   text-align: center;
+  margin-top: 5%;
 }
 
 ul.footer {
   list-style-type: none;
 }
+/* Copied this across from my own personal website */
+@media (max-width: 650px){
+  .carousel-inner {
+    max-height: 200px;
+  }
