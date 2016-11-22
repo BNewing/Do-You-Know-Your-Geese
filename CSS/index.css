@@ -1,7 +1,4 @@
-body {
-  background-color:
-}
-
+/* home page CSS */
 .home-jumbotron {
   margin-bottom: 0px;
 }
@@ -14,26 +11,26 @@ div.home {
   text-align: center;
 }
 
-div.creator {
-  text-align: center
-}
+/* About Page CSS */
 
-h1 {
-  color: pink;
-}
 
-img.bev {
-  height: 200px;
-  width: 200px;
-}
 
+/* Contact Page CSS */
 img.social-media {
   height: 40px;
   width: 40px;
   margin: 10px;
 }
 
-/* found this on codepen after a Google search*/
+textarea {
+  width: 400px;
+}
+
+input {
+  width: 400px;
+}
+/* found this on codepen after a Google search and then used own code to tweak
+to get to fully sit at the bottom */
 html {
   position: relative;
   min-height: 100%;
@@ -57,7 +54,7 @@ body {
 ul.footer {
   list-style-type: none;
 }
-/* Copied this across from my own personal website */
+/* Copied this media query across from my own personal website */
 @media (max-width: 650px){
   .carousel-inner {
     max-height: 200px;
