@@ -1,3 +1,7 @@
+body {
+  background-color:
+}
+
 .home-jumbotron {
   margin-bottom: 0px;
 }
@@ -31,4 +35,14 @@ img.social-media {
   height: 40px;
   width: 40px;
   margin: 10px;
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
 }
