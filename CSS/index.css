@@ -37,6 +37,7 @@ img.social-media {
   margin: 10px;
 }
 
+/* found this on codepen after a Google search*/
 .footer {
   position: absolute;
   right: 0;
@@ -45,4 +46,8 @@ img.social-media {
   padding: 1rem;
   background-color: #efefef;
   text-align: center;
+}
+
+ul.footer {
+  list-style-type: none;
 }
