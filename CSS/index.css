@@ -1,11 +1,22 @@
+/* Overall Page CSS */
+
 body {
-  background-color:
+  background-color: #A6C48A;
 }
 
-.home-jumbotron {
-  margin-bottom: 0px;
+.jumbotron {
+  background-color: #678D58;
 }
 
+a {
+  color: #F4F0BB;
+}
+
+ul.footer {
+  background-color: #69747C;
+}
+
+/* home page CSS */
 .carousel-inner {
   max-height: 450px;
 }
@@ -14,30 +25,42 @@ div.home {
   text-align: center;
 }
 
-div.creator {
-  text-align: center
-}
+/* About Page CSS */
 
-h1 {
-  color: pink;
-}
 
-img.bev {
-  height: 200px;
-  width: 200px;
-}
 
-body {
-  color: pink;
-}
-
+/* Contact Page CSS */
 img.social-media {
   height: 40px;
   width: 40px;
   margin: 10px;
 }
 
-/* found this on codepen after a Google search*/
+textarea {
+  width: 400px;
+}
+
+input {
+  width: 400px;
+}
+
+/* Nav Bar CSS */
+nav {
+  font-size: 25px;
+
+}
+
+/* found this on codepen after a Google search and then used own code to tweak
+to get to fully sit at the bottom */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 10rem;
+}
+
 .footer {
   position: absolute;
   right: 0;
@@ -46,8 +69,14 @@ img.social-media {
   padding: 1rem;
   background-color: #efefef;
   text-align: center;
+  margin-top: 5%;
 }
 
 ul.footer {
   list-style-type: none;
 }
+/* Copied this media query across from my own personal website */
+@media (max-width: 650px){
+  .carousel-inner {
+    max-height: 200px;
+  }
