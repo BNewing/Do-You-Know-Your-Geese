@@ -19,4 +19,4 @@ The actual quiz will be coming soon!
 + Bootstrap
 + Firebase
 
-[Screenshot](Images/screenshot.png)
+<img alt="screenshot of home page" src="./Images/screenshot.png">
