@@ -11,17 +11,18 @@ firebase.initializeApp(config);
 var database = firebase.database();
 
 function writeUserData() {
-var name = document.getElementById("name").value;
-var email = document.getElementById("email").value;
-var message = document.getElementById("message").value;
-if(name != "" && email != "" && message != ""){
-  database.ref('users/' + name).set({
-    name: name,
-    email: email,
-    message: message
-  })
-}
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var message = document.getElementById("message").value;
+  if(name != "" && email != "" && message != ""){
+    database.ref('users/' + name).set({
+      name: name,
+      email: email,
+      message: message
+    })
+  alert("Thank you!")
+  }
   else {
-    alert("You need to fill all the fields out first!")
+  alert("You need to fill all the fields out first!");
   };
 }
