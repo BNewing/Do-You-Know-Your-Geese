@@ -1,12 +1,12 @@
-var config = {
-  apiKey: "AIzaSyDxoXiZy8-3C9Ose9EoT1juFGNF8THoi0g",
-  authDomain: "do-you-know-your-geese.firebaseapp.com",
-  databaseURL: "https://do-you-know-your-geese.firebaseio.com",
-  storageBucket: "",
-  messagingSenderId: "632660019254"
-};
-
-firebase.initializeApp(config);
+// var config = {
+//   apiKey: "AIzaSyDxoXiZy8-3C9Ose9EoT1juFGNF8THoi0g",
+//   authDomain: "do-you-know-your-geese.firebaseapp.com",
+//   databaseURL: "https://do-you-know-your-geese.firebaseio.com",
+//   storageBucket: "",
+//   messagingSenderId: "632660019254"
+// };
+//
+// firebase.initializeApp(config);
 
 // $('#submit').click.function() {
 //   console.log(4);
@@ -26,14 +26,42 @@ function writeUserData() {
   var name = document.getElementById("name").value;
   var email = document.getElementById("email").value;
   var message = document.getElementById("message").value;
-    if(name != '' && email != '' && message != ''){
-      firebase.database().ref('users/' + name).set({
-        name: name,
-        email: email,
-        message: message
-      });
-    }
-    else {
-      alert('Please fill out the missing field!');
-    }
-  }
+    // if(name != '' && email != '' && message != ''){
+    //   firebase.database().ref('users/' + name).set({
+    //     name: name,
+    //     email: email,
+    //     message: message
+    //   });
+    // }
+    // else {
+    //   alert('Please fill out the missing field!');
+    // }
+//    alert(name, email, message);
+
+firebase.database().ref('users/' + "newname").set({
+
+         name: "name test",
+         email: "email@jgy.com",
+         message: "message"
+   }
+ );
+
+}
+// var testdb = firebase.database()
+//       testdb.ref('users/' + name).set(
+// "test strings"
+//     //     {
+//     //     name: name,
+//     //     email: email,
+//     //     message: message
+//     // }
+//
+//     , function(error) {
+//       if (error) {
+//         alert("error"+error);
+//       } else {
+//         alert("saved");
+//       }
+//     }
+//     )
+//   }

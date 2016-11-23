@@ -8,46 +8,17 @@
   got it stored in their cache from another website -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-  <!-- addition of jQuery to get Bootstrap to work -->
-  <script
-    src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
-    integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
-    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
 
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-      crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-      <link style="text/css" rel="stylesheet" href="CSS/index.css">
-
-  <title>Contact</title>
-
-<!-- Firebase - going along with the tutorial -->
-<!--
-  <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase-auth.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase-database.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase-messaging.js"></script>
--->
+  <link style="text/css" rel="stylesheet" href="CSS/index.css">
 
   <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
-  <script>
 
-  </script>
+  <script src="contact-form.js"></script>
 
-  <script> var config = {
-    apiKey: "AIzaSyDxoXiZy8-3C9Ose9EoT1juFGNF8THoi0g",
-    authDomain: "do-you-know-your-geese.firebaseapp.com",
-    databaseURL: "https://do-you-know-your-geese.firebaseio.com",
-    storageBucket: "",
-    messagingSenderId: "632660019254"
-  };
-
-  firebase.initializeApp(config);
-  </script>
-
-  <script src="contact.js"></script>
+  <title>Contact</title>
 
 </head>
 
@@ -95,7 +66,7 @@ works, that I originally pulled from Bootstrap documentation -->
 
     <div class="col-md-6 col-xs-12">
       <h1>Contact Form</h1>
-      <form method="post">
+      <form>
         <div>
             <label for="name">Name:</label><br>
             <input type="text" id="name" name="user_name" />
