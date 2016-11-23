@@ -8,18 +8,15 @@
   got it stored in their cache from another website -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-  <!-- addition of jQuery to get Bootstrap to work -->
-  <script
-    src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
-    integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
-    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
 
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-      crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-      <link style="text/css" rel="stylesheet" href="CSS/index.css">
+  <link style="text/css" rel="stylesheet" href="CSS/index.css">
+
+  <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+
+  <script src="contact-form.js"></script>
 
   <title>Contact</title>
 
@@ -43,7 +40,7 @@ works, that I originally pulled from Bootstrap documentation -->
 		<ul class="nav nav-justified">
 			<li role="presentation" class="nav d-inline-block align-top"><a href="index.html">Home</a></li>
 			<li role="presentation" class="nav"><a href="about.html">About</a></li>
-			<li role="presentation" class="active nav"><a href="contact.html">Contact</a></li>
+			<li role="presentation" class="active nav"><a href="contact-form.html">Contact</a></li>
 		</ul>
   </div>
 </nav>
@@ -69,22 +66,23 @@ works, that I originally pulled from Bootstrap documentation -->
 
     <div class="col-md-6 col-xs-12">
       <h1>Contact Form</h1>
-      <form action="/my-handling-form-page" method="post">
+      <form>
         <div>
             <label for="name">Name:</label><br>
             <input type="text" id="name" name="user_name" />
         </div>
         <div>
-            <label for="mail">E-mail:</label><br>
-            <input type="email" id="mail" name="user_mail" />
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="user_email" />
         </div>
         <div>
-            <label for="msg">Message:</label><br>
-            <textarea id="msg" name="user_message"></textarea>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="user_message"></textarea>
         </div>
 
         <div class="button">
-            <button type="submit">Send your message</button>
+            <button type="submit" id="submit" onClick="writeUserData()"> Send your message</button>
+            <p id="status"></p>
         </div>
       </form>
     </div>
