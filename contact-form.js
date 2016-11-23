@@ -11,9 +11,9 @@ firebase.initializeApp(config);
 var database = firebase.database();
 
 function writeUserData() {
-  var name = document.getElementById("name").value;
-  var email = document.getElementById("email").value;
-  var message = document.getElementById("message").value;
+  var name =  $("#name").val();
+  var email = $("#email").val();
+  var message = $("#message").val();
   if(name != "" && email != "" && message != ""){
     database.ref('users/' + name).set({
       name: name,
