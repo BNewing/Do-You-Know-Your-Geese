@@ -14,9 +14,14 @@ function writeUserData() {
 var name = document.getElementById("name").value;
 var email = document.getElementById("email").value;
 var message = document.getElementById("message").value;
+if(name != "" && email != "" && message != ""){
   database.ref('users/' + name).set({
     name: name,
     email: email,
     message: message
-  });
+  })
+}
+  else {
+    alert("You need to fill all the fields out first!")
+  };
 }
