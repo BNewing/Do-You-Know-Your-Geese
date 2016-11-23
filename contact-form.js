@@ -12,9 +12,11 @@ var database = firebase.database();
 
 function writeUserData() {
 var name = document.getElementById("name").value;
+var email = document.getElementById("email").value;
+var message = document.getElementById("message").value;
   database.ref('users/' + name).set({
     name: name,
-    email: "fjdlaf",
-    message: "fjal"
+    email: email,
+    message: message
   });
 }
