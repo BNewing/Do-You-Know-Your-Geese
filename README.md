@@ -6,7 +6,7 @@ View the website here:
 
 ## 1. What the Project Currently Is
 
-This is a website that I built in around a day. It is for a web app I'm going to build that will live on the website in the future. It has a basic Home Page, About Page and Contact Page with working contact form.
+So far, this is a website for a web app that I'm going to build. Once the web app is written, it will live on the website. It has a basic Home Page, an About Page and a Contact Page with a working contact form. I wrote the basic site in around a day.
 
 ## 2. What the Finished Project Will Be
 
