@@ -17,13 +17,13 @@ ul.footer {
   max-height: 450px;
 }
 
-div.home {
+.home {
   text-align: center;
 }
 
 
 /* Contact Page CSS */
-img.social-media {
+.social-media {
   height: 40px;
   width: 40px;
   margin: 10px;
@@ -74,3 +74,4 @@ ul.footer {
   .carousel-inner {
     max-height: 200px;
   }
+}
