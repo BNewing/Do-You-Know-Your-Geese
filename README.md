@@ -17,6 +17,8 @@ I am planning on making a flash-card style web app with JavaScript that will hav
 - You're told if you were right/what the right answer is
 - If you click the 'next' button, you'll be taken to a new image
 
+I'm also planning on adding in a page that shows different images and/or gifs of geese. I'm planning on using the Giphy API with this at some point. 
+
 ## 3. Technologies Used
 
 - HTML
