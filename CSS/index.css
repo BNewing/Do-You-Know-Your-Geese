@@ -1,5 +1,9 @@
 /* Overall Page CSS */
 
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
 .jumbotron {
   background-color: #FFA500;
 }
@@ -19,6 +23,10 @@ ul.footer {
 
 .home {
   text-align: center;
+}
+
+h4, p {
+  line-height: 1.5;
 }
 
 
